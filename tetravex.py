@@ -27,17 +27,17 @@ board_coordinates = td.get_board_coordinates()
 board_width = td.get_board_width()
 
 if not tile_coordinates:
-	print("tiles not found")
+    print("tiles not found")
 elif not board_coordinates:
-	print("board not found")
+    print("board not found")
 else:
 
-	#solve the puzzle
-	ts = TetravexSolver(n)
-	ts.solve(tiles_array)
-	
-	#automatically input the solution
-	ts.set_tile_coordinates(tile_coordinates)
-	ts.set_board_coordinates(board_coordinates)
-	ts.set_board_width(board_width)
-	ts.input_solution()
+    #solve the puzzle
+    ts = TetravexSolver(n)
+    ts.solve(tiles_array)
+
+    #automatically input the solution
+    ts.set_tile_coordinates(tile_coordinates)
+    ts.set_board_coordinates(board_coordinates)
+    ts.set_board_width(board_width)
+    ts.input_solution()
