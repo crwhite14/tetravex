@@ -1,4 +1,4 @@
-# Tetravex
+# tetravex
 
 
 Given a Tetravex game with an n by n board and an n by n set of tiles
