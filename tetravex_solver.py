@@ -27,6 +27,10 @@ class TetravexSolver:
                 pyautogui.moveTo(x_tiles + tile_length/2 + y*tile_length, y_tiles \
                                  + tile_length/2 + x*tile_length)
 
+                if i == 0 and j == 0:
+#                    time.sleep(.5)
+                    pyautogui.click()
+
                 #move the mouse to its correct location on the board
                 pyautogui.dragTo(x_board + tile_length/2 + j*tile_length, y_board \
                                  + tile_length/2 + i*tile_length, 0.5, pyautogui.easeOutQuad) 

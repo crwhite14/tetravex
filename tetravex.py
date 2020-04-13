@@ -34,7 +34,13 @@ else:
 
     #solve the puzzle
     ts = TetravexSolver(n)
-    ts.solve(tiles_array)
+    solution = ts.solve(tiles_array)
+
+    mac = True
+    if mac:
+        tile_coordinates = [coord / 2 for coord in tile_coordinates]
+        board_coordinates = [coord / 2 for coord in board_coordinates]
+        board_width = board_width / 2
 
     #automatically input the solution
     ts.set_tile_coordinates(tile_coordinates)
